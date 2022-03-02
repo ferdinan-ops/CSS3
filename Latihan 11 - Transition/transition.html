@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition CSS3</title>
+    <link rel="stylesheet" href="transition.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="deskripsi">
+            <h1>Transition</h1>
+            <p>Transition adalah properti CSS 3 yang memungkinkan kita dapat mengubah nilai dari property HTML <b>secara
+                    harus</b>
+                .</p>
+            <p>Ada satu lagi properi CSS 3 yang memiliki fungsi sama seperti <b>Transition</b> yaitu <b>Animation</b>.
+                Transition dan animation sangat mirip namun yang membedakannya adalah keadaan awal dan keadaan akhirnya.
+            </p>
+            <p><i>*Note:Selalu simoan nilai/property transition pada posisi awal.</i></p>
+            <ul>
+                <li>
+                    <p><b>Animation</b></p>
+                    <p>Animation tidak hanya memiliki keadaan awal dan akhir saja namun animation memiliki keyframe atau
+                        banyak keadaan sampai ke keadaan akhir</p>
+                    <img src="Animation.png" alt="gambar cth animation">
+                </li>
+                <li>
+                    <p><b>Transition</b></p>
+                    <p>Transition hanya memiliki keadaan akhir dan keadaan awal yang membuat hal itu disebut sebagai
+                        transisi.</p>
+                    <img src="Transition.png" alt="gambar cth transisi">
+                </li>
+            </ul>
+
+            <p>Syntax Transition Property : <code><b>transition:</b> [propety] [durasi] [fungsi] [delay];</code></p>
+            <div class="ket">
+                <p><b>Keterangan:</b></p>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td>Durasi</td>
+                        <td>
+                            <p>diisi dengan angka dan satuan <b>s</b>(second)/<b>ms</b>(milisecond).</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Property</td>
+                        <td>
+                            <p>diisi dengan properti yang ingin diubah atau dengan nilai all untuk default dan none
+                                untuk
+                                menghapus.</p>
+                            <img src="bisa.png" alt="bisa">
+                            <img src="gak bisa.png" alt="gak bisa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fungsi</td>
+                        <td>
+                            <p>biasa disebut timing function yang aratinya pergerakan apa yang ingin dilakukan pada saat
+                                transisi.</p>
+                            <img src="timing function.png" alt="fungsi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Delay</td>
+                        <td>
+                            <p>diisi dengan angka dan satuan <b>s</b>(second)/<b>ms</b>(milisecond).</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="example">
+            <h2>Contoh Penggunaan :</h2>
+            <ol>
+                <li>
+                    <h3>Penggunaan Durasi Value</h3>
+                    <p>Arahkan cursor Anda ke kotak bewarna hijau untuk melihat perubahan dan perbedaan dari kedua kotak
+                        tersebut dan dapat dimengerti dengan lebih mudah.</p>
+                    <div class="durasi">
+                        <div class="act1">
+                            <p>Tanpa Transition</p>
+                            <div class="cth1"></div>
+                            <pre>div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+}
+
+div:hover {
+    transform: rotate(45deg);
+}</pre>
+                        </div>
+
+                        <div class="act2">
+                            <p>Menggunakan Transition</p>
+                            <div class="cth1-1"></div>
+                            <pre>div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+    <mark>transition: 1s;</mark>
+}
+
+div:hover {
+    transform: rotate(45deg);}</pre>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <h3>Penggunaan Property Value</h3>
+                    <p>Arahkan cursor Anda ke kotak bewarna hijau untuk melihat perubahan dan perbedaan dari kedua kotak
+                        tersebut dan dapat dimengerti dengan lebih mudah.</p>
+                    <div class="durasi">
+                        <div class="act1">
+                            <p>Tanpa property value</p>
+                            <div class="cth2a">
+                                <div class="cth2"></div>
+                            </div>
+                            <pre>div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+    <mark>transition: all 1s;</mark>
+}
+
+div:hover {
+    transform: rotate(45deg);
+    margin-left: 200px;
+    background-color: salmon;
+}</pre>
+                        </div>
+
+                        <div class="act2">
+                            <p>Menggunakan property value</p>
+                            <div class="cth2b">
+                                <div class="cth2-1"></div>
+                            </div>
+                            <pre>div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+    <mark>transition: margin-left 1s;</mark>
+}
+
+div:hover {
+    transform: rotate(45deg);
+    margin-left: 200px;
+    background-color: salmon;
+}</pre>
+                        </div>
+                    </div>
+                    <p>Dapat dilihat kotak yang tanpa property value terlihat lebih halus pergerakannya dibandingkan
+                        dengan yang menggunakan property value, karena perbedaanya terdapat pada "all" dan
+                        "margin-left". "all" membuat semua property terkena transisi sedangkan margin-left membuat hanya
+                        property margin-left yang terkena transition.</p>
+                </li>
+
+                <li>
+                    <h3>Penggunaan Fungsi Value</h3>
+                    <p>Arahkan cursor Anda ke kotak bewarna hijau untuk melihat perubahan dan perbedaan dari kedua kotak
+                        tersebut dan dapat dimengerti dengan lebih mudah.</p>
+                    <div class="container">
+                        <div class="kotak kotak1">ease</div>
+                        <div class="kotak kotak2">ease-in</div>
+                        <div class="kotak kotak3">ease-out</div>
+                        <div class="kotak kotak4">ease-in-out</div>
+                        <div class="kotak kotak5">linear</div>
+                        <div class="kotak kotak6">cubic</div>
+                    </div>
+                    <p class="center">Script CSS:</p>
+                    <pre>.container {
+    width: 500px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.container:hover .kotak {
+    transform: rotate(720deg);
+    margin-left: 400px;
+    background-color: salmon;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 5px 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.kotak1 {transition: 1s ease;}
+
+.kotak2 {transition: 1s ease-in;}
+
+.kotak3 {transition: 1s ease-out;}
+
+.kotak4 {transition: 1s ease-in-out;}
+
+.kotak5 {transition: 1s linear;}
+
+.kotak6 {transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);}</pre>
+                </li>
+                <li>
+                    <h3>Penggunaan Delay Values</h3>
+                    <p>Arahkan cursor Anda ke kotak bewarna hijau untuk melihat perubahan dan perbedaan dari kedua kotak
+                        tersebut dan dapat dimengerti dengan lebih mudah.</p>
+                    <div class="durasi">
+                        <div class="act1">
+                            <p>Tanpa property value</p>
+                            <div class="container2">
+                                <div class="cth3"></div>
+                            </div>
+                            <pre>div {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        margin: auto;
+        <mark>transition: 3s 2s;</mark>
+    }
+    
+    div:hover {
+        transform: rotate(45deg);
+        margin-left: 200px;
+        background-color: salmon;
+    }</pre>
+                        </div>
+
+                        <div class="act1">
+                            <p>Menggunakan property value</p>
+                            <div class="container3">
+                                <div class="cth4"></div>
+                            </div>
+                            <pre>div {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        margin: auto;
+        <mark>transition: margin-left 3s, transform 3s 2s, 
+                        background-color 2s 3s;</mark>
+    }
+    
+    div:hover {
+        transform: rotate(45deg);
+        margin-left: 200px;
+        background-color: salmon;
+    }</pre>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

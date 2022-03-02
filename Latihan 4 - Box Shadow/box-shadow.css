@@ -1,0 +1,85 @@
+body {
+    font-family: poppins, sans-serif;
+    background-color: whitesmoke;
+}
+
+.content {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contoh,
+.contoh-1,
+.contoh-2,
+.contoh-3,
+.contoh-4,
+.contoh-5,
+.contoh-6,
+.contoh-7 {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+}
+
+.contoh {
+    box-shadow: 5px 5px 5px black;
+}
+
+.contoh-1 {
+    box-shadow: -5px -5px 5px black;
+}
+
+.contoh-2 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.65);
+}
+
+.contoh-3 {
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.65);
+}
+
+.contoh-4 {
+    box-shadow: 0px 30px 10px -10px rgba(0, 0, 0, 0.65);
+    transition: .3s;
+}
+
+.contoh-4:hover {
+    margin-top: 40px;
+    box-shadow: 0px 80px 15px -40px rgba(0, 0, 0, 0.65);
+}
+
+.contoh-5 {
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.65);
+}
+
+.contoh-6 {
+    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 255, 0.5);
+}
+
+.contoh-7 {
+    box-shadow: 0px 0px 0px 5px lightcoral, 0px 0px 0px 10px lightblue, 0px 0px 0px 15px rebeccapurple;
+    border-radius: 50%;
+}
+
+pre {
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 15px;
+}
+
+
+.bungkus {
+    margin-left: 40px;
+    width: fit-content;
+    text-align: center;
+    font-size: 14px;
+}
+
+.bungkus pre {
+    margin: auto;
+    background-color: whitesmoke;
+    width: fit-content;
+    font-size: 15px;
+}

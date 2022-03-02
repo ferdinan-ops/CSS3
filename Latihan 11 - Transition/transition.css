@@ -1,0 +1,210 @@
+body {
+    font-family: poppins, sans-serif;
+    background-color: silver;
+}
+
+.content {
+    width: 900px;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+}
+
+ul li img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+code {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table tr td {
+    font-size: 15px;
+}
+
+table tr td p {
+    margin: 0;
+}
+
+table tr td img {
+    width: 300px;
+
+}
+
+.ket p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.cth1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+}
+
+.cth1:hover,
+.cth1-1:hover {
+    transform: rotate(45deg);
+}
+
+.act1 {
+    box-sizing: border-box;
+    width: fit-content;
+    border: 1px solid silver;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.act1 p,
+.act2 p {
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+pre {
+    width: fit-content;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+}
+
+.cth1-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: auto;
+    transition: 1s;
+}
+
+.act2 {
+    display: inline-block;
+    box-sizing: border-box;
+    width: fit-content;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-left: 35px;
+    border-radius: 8px;
+}
+
+.durasi {
+    margin: auto;
+    width: max-content;
+}
+
+.cth2a,
+.cth2b {
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.cth2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transition: all 1s;
+}
+
+.cth2-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transition: margin-left 1s;
+}
+
+.cth2a:hover .cth2 {
+    transform: rotate(45deg);
+    margin-left: 200px;
+    background-color: salmon;
+}
+
+.cth2b:hover .cth2-1 {
+    transform: rotate(45deg);
+    margin-left: 200px;
+    background-color: salmon;
+}
+
+.container {
+    width: 500px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.container:hover .kotak {
+    transform: rotate(720deg);
+    margin-left: 400px;
+    background-color: salmon;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 5px 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+.kotak1 {
+    transition: 1s ease;
+}
+
+.kotak2 {
+    transition: 1s ease-in;
+}
+
+.kotak3 {
+    transition: 1s ease-out;
+}
+
+.kotak4 {
+    transition: 1s ease-in-out;
+}
+
+.kotak5 {
+    transition: 1s linear;
+}
+
+.kotak6 {
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.center {
+    text-align: center;
+}
+
+.cth3,
+.cth4 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.cth3 {
+    transition: 3s 2s;
+}
+
+.cth4 {
+    transition: margin-left 3s, transform 3s 2s, background-color 2s 3s;
+}
+
+.container2,
+.container3 {
+    width: 300px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.container2:hover .cth3,
+.container3:hover .cth4 {
+    transform: rotate(720deg);
+    margin-left: 200px;
+    background-color: salmon;
+}

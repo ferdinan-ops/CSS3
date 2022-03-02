@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius - CSS 3</title>
+    <link rel="stylesheet" href="border-radius.css">
+</head>
+
+<body>
+    <h1>Border Radius</h1>
+    <p>Border Radius adalah properti css 3 membuat kotak yg ujung" menjadi tumpul. Semakin besar border-radius nya maka
+        ujung dari kotaknya akan tumpul.</p>
+    <h3>Contoh Penggunaan border-radius :</h3>
+    <ol>
+        <li>
+            <h4>Border-radius biasa</h4>
+            <div class="contoh">Hello World</div>
+            <h5>Script CSS : </h5>
+            <pre>
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            line-height: 300px;
+            text-align: center;
+            color: white;
+        }
+
+        .contoh {
+            border-radius: 4px;
+        }
+    </pre>
+        </li>
+
+        <li>
+            <h4>Border-radius lingkaran</h4>
+            <div class="lingkaran">Hello World</div>
+            <h5>Script CSS : </h5>
+            <pre>
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            line-height: 300px;
+            text-align: center;
+            color: white;
+        }
+
+        .lingkaran {
+            border-radius: 50%;
+        }
+    </pre>
+        </li>
+        <li>
+            <h4>Border-radius satu sisi</h4>
+            <p>Property border-radius bisa digunakan hanya untuk beberapa sisi saja seperti diatas kanan, siatas kiri,
+                dibawah kanan, dan dibawah kiri.</p>
+            <p>Berikut macam-macam property-nya :</p>
+            <ul>
+                <li><i>border-top-right-radius</i> : membuat border radius pada sisi kanan atas</li>
+                <li><i>border-top-left-radius</i> : membuat border radius pada sisi kiri atas</li>
+                <li><i>border-bottom-right-radius</i> : membuat border radius pada sisi kanan bawah</li>
+                <li><i>border-bottom-left-radius</i> : membuat border radius pada sisi kiri bawah</li>
+            </ul>
+            <br>
+            <div class="satu-sisi">Hello World</div>
+            <h5>Script CSS : </h5>
+            <pre>
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: salmon;
+            line-height: 300px;
+            text-align: center;
+            color: white;
+        }
+
+        .satu-sisi {
+            border-top-right-radius: 50%;
+        }
+    </pre>
+        </li>
+        <li>
+            <h4>Border-radius dua sisi</h4>
+            <div class="dua-sisi">Hello World</div>
+            <h5>Script CSS :</h5>
+            <pre>
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: salmon;
+        line-height: 300px;
+        text-align: center;
+        color: white;
+    }
+            
+    .dua-sisi {
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Border-radius dua sisi</h4>
+            <div class="tiga-sisi">Hello World</div>
+            <h5>Script CSS :</h5>
+            <pre>
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: salmon;
+        line-height: 300px;
+        text-align: center;
+        color: white;
+    }
+            
+    .tiga-sisi {
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Border-radius Shorthand</h4>
+            <p>Shorthand border-radius memiliki urutan seperti margin padding dan shorthand lainnya, yaitu seperti arah
+                jarum jam. Berikut Script Shorthand dari border-radius :</p>
+            <pre class="bagus">
+
+    border-radius: kiri-atas kanan-atas kanan-atas kiri-bawah;
+    border-radius: 0 50% 50% 50%;
+            </pre>
+            <div class="shorthand">Hello World</div>
+            <h5>Script CSS :</h5>
+            <pre>
+
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: salmon;
+        line-height: 300px;
+        text-align: center;
+        color: white;
+    }
+            
+    .dua-sisi {
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+    }
+            </pre>
+        </li>
+        <li>
+            <h4>Border-radius image</h4>
+            <ul>
+                <li>
+                    <h5>Masalah</h5>
+                    <p>Dalam kondisi ini gambar berada di file HTML / menggunakan tag dan tak menggunakan
+                        background-image.</p>
+                    <div class="masalah">
+                        <img src="profil.jpeg" alt="profil" width="200px">
+                    </div>
+                </li>
+                <li>
+                    <h5>Solusi Gampang</h5>
+                    <p>Membuat gambar menjadi background image dari elemen div tsb dan menghapus tag img yg ada di dalam
+                        div.</p>
+                    <div class="solusi-1"></div>
+                </li>
+                <li>
+                    <h5>Solusi Bila ingin pakai tag img</h5>
+                    <div class="solusi-2">
+                        <img src="profil.jpeg" alt="profil">
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+
+</html>

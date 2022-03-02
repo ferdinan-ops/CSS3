@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: silver;
+    font-family: poppins, sans-serif;
+}
+
+.content {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+img {
+    width: 400px;
+    margin: auto;
+    display: block;
+}
+
+p img {
+    margin-left: 0;
+}
+
+.syntax {
+    margin-left: 15px;
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 15px;
+}
+
+.b {
+    color: purple;
+    font-weight: bold;
+}
+
+.a {
+    color: blue;
+    font-weight: bold;
+}
+
+.c {
+    color: red;
+    font-weight: bold;
+}

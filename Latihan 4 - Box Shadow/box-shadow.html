@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow CSS 3</title>
+    <link rel="stylesheet" href="box-shadow.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Box Shadow</h1>
+        <p>Box Shadow adalah property css 3 yang berfungsi untuk memberikan bayangan dari elemen HTML yang kita buat</p>
+        <h4>Struktur dan 4 nilai yg harus ada di box shadow :</h4>
+        <div class="bungkus">
+            <pre>box-shadow: (x-offset) (y-offset) (blur) (color);</pre>
+            <p><b>atau</b></p>
+            <pre>box-shadow: (inset) (x-offset) (y-offset) (blur) (spread) (color);</pre>
+        </div>
+        <h4>Keterangan :</h4>
+        <ul>
+            <li><b>x-offset</b> = utk mengatur jarak bayangan pada sumbu horizontal yang nilainya numerik.</li>
+            <li><b>y-offset</b> = utk mengatur jarak bayangan pada sumbu vertikal yang nilainya numerik.</li>
+            <li><b>blur</b> = utk mengatur seberapa besar blur pada bayangan</li>
+            <li><b>color</b> = utk memberi warna bayangan</li>
+            <li><b>inset</b> = membuat bayangan berada didalm kotak</li>
+            <li><b>spread</b> = untuk ukuran atau size dari bayangannya.</li>
+        </ul>
+
+        <p><i>*note: teks bewarna kuning merupakan hal yg membuat model itu terjadi.</i></p>
+        <h3>Penggunaan box-shadow property :</h3>
+        <ul type="square">
+            <li>
+                <h4>box-shadow biasa dengan warna solid</h4>
+                <div class="contoh"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    <mark>box-shadow: 5px 5px 5px black;</mark>
+}</pre>
+            </li>
+            <li>
+                <h4>box-shadow dengan bayangan ke arah kiri dan warna solid</h4>
+                <div class="contoh-1"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    box-shadow: <mark>-5px -5px</mark> 5px black;
+}</pre>
+            </li>
+            <li>
+                <h4>box-shadow yang biasa dipakai</h4>
+                <div class="contoh-2"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px <mark>rgba(0, 0, 0, 0.65)</mark>;
+}</pre>
+            </li>
+            <li>
+                <h4>box-shadow pakai nilai <i>spread</i></h4>
+                <div class="contoh-3"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    box-shadow: 5px 5px 10px <mark>5px</mark> rgba(0, 0, 0, 0.65);
+}</pre>
+            </li>
+            <li>
+                <h4>box-shadow pakai nilai <i>spread</i> dengan arah bayangan dari bawah</h4>
+                <div class="contoh-4"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    <mark>box-shadow: 0px 30px 10px -10px rgba(0, 0, 0, 0.65);</mark>
+    <mark>transition: .3s;</mark>
+}
+.contoh:hover {
+    margin-top: 40px;
+    box-shadow: 0px 80px 15px -40px rgba(0, 0, 0, 0.65);
+}</pre>
+            </li>
+            <li>
+                <h4>box-shadow pakai nilai <i>inset</i></h4>
+                <div class="contoh-5"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    box-shadow: <mark>inset</mark> 0px 0px 5px 5px rgba(0, 0, 0, 0.65);
+}</pre>
+            </li>
+            <li>
+                <h4>Multiple box-shadow</h4>
+                <div class="contoh-6"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    <mark>box-shadow: 5px 6px 5px rgba(255, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 255, 0.5);</mark>
+}</pre>
+            </li>
+            <li>
+                <h4>Multiple box-shadow : multiple border</h4>
+                <div class="contoh-7"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh {
+    width: 300px;
+    height: 300px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    <mark>box-shadow: 0px 0px 0px 5px lightcoral, 0px 0px 0px 10px lightblue, 0px 0px 0px 15px rebeccapurple;</mark>
+    <mark>border-radius: 50%;</mark>
+}</pre>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

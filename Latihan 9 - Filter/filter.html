@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter CSS 3</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="deskripsi">
+            <h1>Filter</h1>
+            <p class="rata">Filter merupakan property CSS 3 yang digunakan untuk memberikan efek visual pada gambar
+                ,background atau
+                border. </p>
+            <p>Syntax property filter : <code><span>filter:</span> [tipe-filter]</code></p>
+            <p>Tipe Filter :</p>
+            <ul>
+                <li><a href="#blur">blur</a> : px.</li>
+                <li><a href="#brightness">brightness</a> : angka atau %.</li>
+                <li><a href="#contrast">contrast</a> : angka atau %.</li>
+                <li><a href="#saturate">saturate</a> : angka atau %.</li>
+                <li><a href="#grayscale">grayscale</a> : angka atau %.</li>
+                <li><a href="#sepia">sepia</a> : angka atau %.</li>
+                <li><a href="#hue-rotate">hue-rotat</a> : deg dalam artian derajat searah jarum jam.</li>
+                <li><a href="#invert">invert</a> : angka atau %.</li>
+                <li><a href="#opacity">opacity</a> : angka atau %.</li>
+                <li><a href="#shadow">drop-shadow</a> : sama seperti box-shadow.</li>
+                <li><a href="#gabungan">gabungan dua atau lebih tipe.</a> </li>
+            </ul>
+        </div>
+        <div class="example">
+            <p class="rata">Berikut dibawah ini merupakan gambar pemandangan yang luar biasa tanpa ada
+                filter apapun
+                pada
+                gambar ini. Gambar ini adalah gambar normal yang sebelum di filter dengan tipe filter
+                apapun. Nah,
+                gambar ini yang akan diberikan property filter dari semua tipe filter yang ada.
+            </p>
+            <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh1">
+            <pre>img {margin: auto; width: 500px; display: block;}</pre>
+            <h3>Contoh Penggunaan :</h3>
+            <ul>
+                <li id="blur">
+                    <h4>Penggunaan blur value</h4>
+                    <p class="rata">Gambar dibawah ini merupakan gambar yang telah ditambahkan property
+                        filter tipe blur
+                        sebanyak
+                        5px. Diberikan 5px karena jika sangat besar maka gambarnya semakin tidak
+                        kelihatan.</p>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh2">
+                    <pre>img {margin: 20px auto; <mark>filter: blur(5px);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="brightness">
+                    <h4>Penggunaan brightness value</h4>
+                    <p class="rata">Gambar dibawah ini merupakan gambar yang telah ditambahkan property
+                        filter tipe
+                        brightness
+                        sebanyak
+                        2. Diberikan 2 karena jika sangat besar maka gambarnya akan semakin terang,
+                        memberikan nilai
+                        angka pada tipe brightness berfungsi untuk <b><i>mengatur gambar untuk lebih
+                                cerah.</i></b></p>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh3">
+                    <pre>img {margin: 20px auto; <mark>filter: brightness(2);</mark> width: 500px; display: block;}</pre>
+                    <p class="rata">Gambar dibawah ini merupakan gambar yang telah ditambahkan property
+                        filter tipe
+                        brightness
+                        sebanyak
+                        50%. Diberikan 50% karena jika semakin besar maka akan semakin terang dan jika
+                        semakin kecil maka gambar akan menjadi hitam gelap, memberikan nilai
+                        % pada tipe brightness berfungsi untuk <b><i>mengatur gambar untuk lebih
+                                gelap.</i></b>. Untuk
+                        default dari tipe brightness ini yaitu 1 pada angka dan 100% pada %.</p>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh4">
+                    <pre>img {margin: 20px auto; <mark>filter: brightness(50%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="contrast">
+                    <h4>Penggunaan contrast value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh5">
+                    <pre>img {margin: 20px auto; <mark>filter: contrast(2);</mark> width: 500px; display: block;}</pre>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh6">
+                    <pre>img {margin: 20px auto; <mark>filter: contrast(50%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="saturate">
+                    <h4>Penggunaan saturate value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh7">
+                    <pre>img {margin: 20px auto; <mark>filter: saturate(3);</mark> width: 500px; display: block;}</pre>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh8">
+                    <pre>img {margin: 20px auto; <mark>filter: saturate(10%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="grayscale">
+                    <h4>Penggunaan grayscale value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh9">
+                    <pre>img {margin: 20px auto; <mark>filter: grayscale(2);</mark> width: 500px; display: block;}</pre>
+                    <p>Penggunaan grayscale value % memiliki keunikan dengan tipe lainnya semakin kecil
+                        nilainya maka
+                        semakin ke default tingkatannya dan semangkin besar maka semakin gelap sedangkan
+                        value angka
+                        tida bisa ke default kecuali nilai 0. Saran lebih baik gunakan %.</p>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh10">
+                    <pre>img {margin: 20px auto; <mark>filter: grayscale(50%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="sepia">
+                    <h4>Penggunaan sepia value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh11">
+                    <pre>img {margin: 20px auto; <mark>filter: sepia(2);</mark> width: 500px; display: block;}</pre>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh12">
+                    <pre>img {margin: 20px auto; <mark>filter: sepia(50%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="hue-rotate">
+                    <h4>Penggunaan hue-rotate value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh13">
+                    <pre>img {margin: 20px auto; <mark>filter: hue-rotate(100deg);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="invert">
+                    <h4>Penggunaan invert value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh14">
+                    <pre>img {margin: 20px auto; <mark>filter: invert(2);</mark> width: 500px; display: block;}</pre>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh15">
+                    <pre>img {margin: 20px auto; <mark>filter: invert(70%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="opacity">
+                    <h4>Penggunaan opacity value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh16">
+                    <pre>img {margin: 20px auto; <mark>filter: opacity(.7);</mark> width: 500px; display: block;}</pre>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh17">
+                    <pre>img {margin: 20px auto; <mark>filter: opacity(50%);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="drop-shadow">
+                    <h4>Penggunaan drop-shadow value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh18">
+                    <pre>img {margin: 20px auto; <mark>filter: drop-shadow(.7);</mark> width: 500px; display: block;}</pre>
+                </li>
+                <li id="gabungan">
+                    <h4>Penggunaan 2 atau lebih value</h4>
+                    <img src="pulau.jpg" alt="logo Fikom UNIKA" class="contoh19">
+                    <pre>img {margin: 20px auto; <mark>filter: blur(5px) grayscale(100%);</mark> width: 500px; display: block;}</pre>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

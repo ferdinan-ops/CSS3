@@ -1,0 +1,62 @@
+body {
+    background-color: silver;
+    font-family: poppins, sans-serif;
+}
+
+.content {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    padding: 10px 35px;
+}
+
+.rata {
+    text-align: justify;
+}
+
+.deskripsi ul li span {
+    color: rgb(24, 178, 24);
+    font-weight: bold;
+}
+
+.deskripsi ul li {
+    margin-bottom: 6px;
+}
+
+.deskripsi ul {
+    margin-top: -5px;
+}
+
+.contoh2 {
+    width: 200px;
+    margin: auto;
+    display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+.contoh1 {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.contoh3 {
+    width: 700px;
+    margin: auto;
+    display: block;
+}
+
+.ket {
+    text-align: center;
+    margin-top: 0px;
+}
+
+pre {
+    width: auto;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid silver;
+}

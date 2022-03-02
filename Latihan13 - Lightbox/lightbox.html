@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="CSS/lightbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>The Avengers</h1>
+    <div class="container">
+        <ul class="gallery">
+            <li type="none">
+                <a href="#gambar-1">
+                    <img src="Image/thumbs/cap.jpg" alt="Captain America">
+                    <span>Captain America</span>
+                </a>
+
+                <div class="overlay" id="gambar-1">
+                    <a href="lightbox.html" class="close">x Close</a>
+                    <img src="image/full/cap.jpg" alt="Captain America">
+                    <a href="#gambar-4" class="previous">previous</a>
+                    <a href="#gambar-2" class="next">next</a>
+                </div>
+            </li>
+
+
+            <li type="none">
+                <a href="#gambar-2">
+                    <img src="Image/thumbs/Tony.jpg" alt="Iron Man">
+                    <span>Iron Man</span>
+                </a>
+
+                <div class="overlay" id="gambar-2">
+                    <a href="lightbox.html" class="close">x Close</a>
+                    <img src="image/full/Tony.jpg" alt="Iron Man">
+                    <a href="#gambar-1" class="previous">previous</a>
+                    <a href="#gambar-3" class="next">next</a>
+                </div>
+            </li>
+
+            <li type="none">
+                <a href="#gambar-3">
+                    <img src="Image/thumbs/thor.jpg" alt="Thor">
+                    <span>Thor</span>
+                </a>
+
+                <div class="overlay" id="gambar-3">
+                    <a href="lightbox.html" class="close">x Close</a>
+                    <img src="image/full/thor.jpg" alt="Thor">
+                    <a href="#gambar2" class="previous">previous</a>
+                    <a href="#gambar-4" class="next">next</a>
+                </div>
+            </li>
+
+            <li type="none" class="tengah">
+                <a href="#gambar-4">
+                    <img src="Image/thumbs/Hulk.jpg" alt="Bruce Banner">
+                    <span>Bruce Banner</span>
+                </a>
+
+                <div class="overlay" id="gambar-4">
+                    <a href="lightbox.html" class="close">x Close</a>
+                    <img src="image/full/Hulk.jpg" alt="gambar-4">
+                    <a href="#gambar-3" class="previous">previous</a>
+                    <a href="#gambar-1" class="next">next</a>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</body>
+
+</html>

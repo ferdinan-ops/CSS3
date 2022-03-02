@@ -1,0 +1,77 @@
+ul li i {
+    font-weight: bold;
+}
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+}
+
+.lingkaran {
+    border-radius: 50%;
+}
+
+.contoh {
+    border-radius: 4px;
+}
+
+pre {
+    background-color: whitesmoke;
+    width: 300px;
+}
+
+.satu-sisi {
+    border-top-right-radius: 50%;
+}
+
+.dua-sisi {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.tiga-sisi {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.bagus {
+    width: 480px;
+}
+
+
+.shorthand {
+    border-radius: 50% 50% 0 50%;
+}
+
+.masalah {
+    border-radius: 50% 50% 0 50%;
+    border: 2px solid black;
+}
+
+.solusi-1 {
+    border-radius: 50% 50% 0 50%;
+    background-image: url(profil.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.solusi-2 {
+    border-radius: 50% 50% 0 50%;
+}
+
+.solusi-2 img {
+    border-radius: 50% 50% 0 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 300px;
+}

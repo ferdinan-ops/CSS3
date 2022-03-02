@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS3</title>
+    <link rel="stylesheet" href="Animation.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Animation</h1>
+        <p>Animation tidak hanya memiliki keadaan awal dan akhir saja namun animation memiliki keyframe atau banyak
+            keadaan sampai ke keadaan akhir.</p>
+        <img src="Animation.png" alt="Animation descriptions">
+        <p>Syntax Animation Property:</p>
+        <pre class="syntax"><span class="a">@keyframes</span> <span class="c">[name]</span> {
+    <span class="b">from</span> {
+        [property-css]
+    }
+    <span class="b">to</span> {
+        [property-css]
+    }
+}</pre>
+        <p><b>Nilai-nilai yang dapat diberi pada property animation:</b></p>
+        <ul>
+            <li><b>name:</b> nama dari animasi yang sama dengan keyframes(wajib ada).</li>
+            <li><b>duration:</b> sama fungsi dengan transition. Lihat link berikut utk lebih jelasnya: <a
+                    href="../Latihan 11 - Transition/transition.html">Transition.</a></li>
+            <li><b>timing-function:</b> sama fungsi dengan transition. Lihat link berikut utk lebih jelasnya: <a
+                    href="../Latihan 11 - Transition/transition.html">Transition.</a></li>
+            <li><b>delay:</b> sama fungsi dengan transition. Lihat link berikut utk lebih jelasnya: <a
+                    href="../Latihan 11 - Transition/transition.html">Transition.</a></li>
+            <li><b>iteration-count:</b> punya nilai angka yang artinya mau brp kali animationnya dan nilai infinite yang
+                artinya diulang terus menerus. Untuk contoh klik <a href="#iteration">ini</a>.</li>
+            <li><b>direction:</b> punya nilai normal, reverse, alternate, dan alternate-reverse. Untuk contoh klik <a
+                    href="#direction">ini</a>.</li>
+            <li><b>fill-mode:</b> memnentukan keadaan akhir punya nilai none, forwards, backwards, dan both. Untuk
+                contoh klik <a href="#fill">ini</a>.</li>
+            <li><b>play-state:</b> bisa terlihat apabila Menggunakan javascript, punya nilai stop dan running.</li>
+        </ul>
+        <p>Contoh Penggunaan: </p>
+        <ol>
+            <li>
+                <p>Menurut pakai atau tidaknya animation property.</p>
+                <ul>
+                    <li><a href="contoh/cth1.html">Tanpa animation.</a></li>
+                    <li><a href="contoh/cth2.html">Dengan animation.</a></li>
+                </ul>
+            </li>
+            <li>
+                <p>Menggunakan fungsi keadaan persen(%).</p>
+                <ul>
+                    <li><a href="contoh/cth3.html">contoh</a></li>
+                </ul>
+            </li>
+            <li>
+                <p id="iteration">Menggunakan nilai iteration-count.</p>
+                <ul>
+                    <li>
+                        <a href="contoh/iteration-count-angka.html">Nilai Angka</a>
+                    </li>
+                    <li>
+                        <a href="contoh/iteration-count-infinite.html">Nilai infinite</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p id="direction">Menggunakan nilai direction.</p>
+                <ul>
+                    <li>
+                        <a href="contoh/direction-normal.html">Nilai normal</a>
+                    </li>
+                    <li>
+                        <a href="contoh/direction-reverse.html">Nilai reverse</a>
+                    </li>
+                    <li>
+                        <a href="contoh/direction-alternate.html">Nilai alternate</a>
+                    </li>
+                    <li>
+                        <a href="contoh/direction-altenate-reverse.html">Nilai alternate-reverse</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p id="direction">Menggunakan nilai fill-mode.</p>
+                <ul>
+                    <li>
+                        <a href="contoh/fill-mode-none.html">Nilai none</a>
+                    </li>
+                    <li>
+                        <a href="contoh/fill-mode-forwards.html">Nilai forwards</a>
+                    </li>
+                    <li>
+                        <a href="contoh/fill-mode-backwards.html">Nilai backwards</a>
+                    </li>
+                    <li>
+                        <a href="contoh/fill-mode-both.html">Nilai both</a>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

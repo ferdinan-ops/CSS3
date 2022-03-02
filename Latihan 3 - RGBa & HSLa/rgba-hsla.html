@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBa & HSLa</title>
+    <link rel="stylesheet" href="rgba-hsla.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>RGBa & HSLa</h1>
+        <p>RGBa & HSLa adalah nilai property warna untuk menambahkan warna sama seperti property rgb namun ada
+            penambahan "a"
+            di
+            akhir yg
+            berfunsi sbg opacity dari warna. Funsi "a" itu jg sama seperti property opacity yg memberikan transparansi
+            namun
+            hanya pada warna.</p>
+        <p>Berikut Struktur property dengan nilai rgba & hsla :</p>
+        <code>background-color: rgba(red, green, blue, alpha);</code>
+        <code>background-color: hsla(hue, saturation, lightness, alpha);</code>
+        <ul class="ket">
+            <h4>Keterangan :</h4>
+            <li>red = nilai warna merah</li>
+            <li>green = nilai warna hijau</li>
+            <li>blue = nilai warna biru</li>
+            <li>hue = gradiasi warna</li>
+            <li>saturation = intensitas/kepekatan warna</li>
+            <li>light = kecerahan warna</li>
+            <li>alpha = nilai opacity dari suatu warna</li>
+        </ul>
+
+        <h2>Contoh Penggunaan :</h2>
+        <ul>
+            <li>
+                <h3>Solusi opacity & penggunaan rgba :</h3>
+                <div class="pembungkus-1">
+                    <div class="pembungkus">
+                        <div class="satu">
+                            <div class="dua"></div>
+                        </div>
+                        <div class="script">
+                            <h4>Script CSS :</h4>
+                            <pre>
+.satu {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(250, 128, 114, 0.5);
+    position: relative;
+
+}
+    
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+}
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Solusi opacity & penggunaan hsla :</h3>
+                <div class="pembungkus-1">
+                    <div class="pembungkus">
+                        <div class="satu-1">
+                            <div class="dua-1"></div>
+                        </div>
+                        <div class="script">
+                            <h4>Script CSS :</h4>
+                            <pre>
+.satu {
+    height: 300px;
+    width: 300px;    
+    background-color: hsla(24, 100%, 68%, 0.5);
+    position: relative;
+
+}
+    
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+}
+</pre>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

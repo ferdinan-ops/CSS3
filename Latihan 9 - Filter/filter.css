@@ -1,0 +1,180 @@
+body {
+    background-color: silver;
+    font-family: poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 800px;
+    background-color: white;
+    padding: 10px 30px;
+    margin: auto;
+}
+
+code {
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 5px;
+}
+
+.deskripsi ul li a:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.deskripsi ul li a {
+    text-decoration: none;
+    color: green;
+}
+
+.deskripsi p code span {
+    color: green;
+}
+
+.deskripsi ul li {
+    margin-bottom: 5px;
+}
+
+.deskripsi ul {
+    margin-top: -5px;
+}
+
+.contoh1,
+.contoh2,
+.contoh3,
+.contoh4,
+.contoh5,
+.contoh6,
+.contoh7,
+.contoh8,
+.contoh9,
+.contoh10,
+.contoh11,
+.contoh12,
+.contoh13,
+.contoh14,
+.contoh15,
+.contoh16,
+.contoh17,
+.contoh18,
+.contoh19 {
+    width: 500px;
+    display: block;
+}
+
+.contoh2 {
+    margin: auto;
+    filter: blur(5px);
+}
+
+.contoh1 {
+    margin: auto;
+}
+
+.contoh3 {
+    margin: auto;
+    filter: brightness(2);
+}
+
+.contoh4 {
+    margin: 20px auto;
+    filter: brightness(50%);
+}
+
+.contoh5 {
+    margin: auto;
+    filter: contrast(2);
+}
+
+.contoh6 {
+    margin: 20px auto;
+    filter: contrast(50%);
+}
+
+.contoh7 {
+    margin: auto;
+    filter: saturate(3);
+}
+
+.contoh8 {
+    margin: 20px auto;
+    filter: saturate(10%);
+}
+
+.contoh9 {
+    margin: auto;
+    filter: grayscale(2);
+}
+
+.contoh10 {
+    margin: 20px auto;
+    filter: grayscale(50%);
+}
+
+.contoh11 {
+    margin: auto;
+    filter: sepia(2);
+}
+
+.contoh12 {
+    margin: 20px auto;
+    filter: sepia(50%);
+}
+
+.contoh13 {
+    margin: auto;
+    filter: hue-rotate(100deg);
+}
+
+.contoh14 {
+    margin: auto;
+    filter: invert(2);
+}
+
+.contoh15 {
+    margin: 20px auto;
+    filter: invert(70%);
+}
+
+.contoh16 {
+    margin: auto;
+    filter: opacity(.7);
+}
+
+.contoh17 {
+    margin: 20px auto;
+    filter: opacity(50%);
+}
+
+.contoh18 {
+    margin: auto;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.contoh19 {
+    margin: auto;
+    filter: blur(5px) grayscale(100%);
+}
+
+pre {
+    background-color: whitesmoke;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+mark {
+    background-color: lightgreen;
+    padding: 5px;
+}
+
+.rata {
+    text-align: justify;
+    text-indent: 35px;
+}

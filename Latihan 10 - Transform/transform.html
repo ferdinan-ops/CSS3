@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transform CSS 3</title>
+  <link rel="stylesheet" href="transform.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="deskripsi">
+      <h1>Transform</h1>
+      <p>
+        Transfo adalah property CSS 3 yang memungkinkan kita dapat memanipulasi
+        format visual dari elemen HTML yang kita miliki. Formatnya sendiri
+        beragam yaitu ukuran, bentuk dll.
+      </p>
+      <p>
+        Syntax penulisan property transform:
+        <code><span>transform:</span> (fungsi);</code>
+      </p>
+      <p>Propety transformasi memiliki 2 jenis, yaitu :</p>
+      <ul>
+        <li>2D (Dua Dimensi)</li>
+        <li>3D (Tiga Dimensi)</li>
+      </ul>
+      <p>Fungsi-fungsi yang ada pada transformasi :</p>
+      <ul>
+        <li>
+          <a href="#">scale</a> : memperbesar / memperkecil elemen. Cara
+          penulisannya : scale(angka), scaleX(angka), scaleY(angka).
+        </li>
+        <li>
+          <a href="#">rotate</a> : merotasikan / memutar elemen. Cara
+          penulisannya : rotate(deg), rotateX(deg), rotateY(deg).
+        </li>
+        <li>
+          <a href="#">skew</a> : membuat condong / miring. Cara penulisannya :
+          skew(deg), skewX(deg), skewY(deg).
+        </li>
+        <li>
+          <a href="#">translate</a> : mengubah posisi. Cara penulisannya :
+          translate(px), translateX(px), translateY(px)
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contoh -->
+    <div class="ex">
+      <h2>Contoh Penggunaan</h2>
+      <ul>
+        <li>
+          <!-- Scale Contoh -->
+          <h3>Penggunaan Values Scale</h3>
+          <ul type="Square">
+            <li>
+              <h4>Scale(angka) Values</h4>
+              <div class="contoh1"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.contoh:hover{transform: scale(1.2);}</pre>
+            </li>
+            <li>
+              <h4>ScaleX(angka) Values</h4>
+              <div class="contoh2"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh:hover{transform: scaleX(1.5);}</pre>
+            </li>
+            <li>
+              <h4>ScaleY(angka) Values</h4>
+              <div class="contoh3"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh:hover{transform: scaleY(1.2);}</pre>
+            </li>
+            <li>
+              <h4>Scale Gabungan Values</h4>
+              <div class="contoh4"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh:hover{
+  transform: scale(1.5, 1.2);
+  /* or
+    transform: scaleX(1.5) scaleY(1.2);
+     */
+}</pre>
+            </li>
+          </ul>
+        </li>
+
+        <!-- rotate  -->
+        <li class="space">
+          <h3>Penggunaan Rotate Values</h3>
+          <ul type="square">
+            <li>
+              <h4>Rotate(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh5"></div>
+                <p class="p-khusus">Script CSS :</p>
+                <pre class="pre-khusus">.contoh{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.contoh:hover{transform: rotate(45deg);}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh6"></div>
+                <p class="p-khusus">Script CSS :</p>
+                <pre class="pre-khusus">.contoh{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.contoh:hover{transform: rotate(-45deg);}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>RotateX(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh7"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform: rotateX(90deg);}</pre>
+              </div>
+              <div class="kurung2">
+                <div class="contoh8"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform: rotateX(180deg);}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>RotateY(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh9"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform: rotateY(90deg);}</pre>
+              </div>
+              <div class="kurung2">
+                <div class="contoh10"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform: rotateY(180deg);}</pre>
+            </li>
+            <li>
+              <h4>Rotate Gabungan Values</h4>
+              <div class="kurung1">
+                <div class="contoh11"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform: rotateX(180deg) rotateY(180deg);
+}</pre>
+              </div>
+              <div class="kurung2">
+                <div class="contoh12"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform: scale(1.2) rotate(180deg);
+}</pre>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Skew -->
+        <li class="space">
+          <h3>Penggunaan Skew Values</h3>
+          <ul type="square">
+            <li>
+              <h4>Skew(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh13"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.contoh:hover{transform:skew(30deg);}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh14"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.contoh:hover{transform:skew(-30deg);}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>SkewX(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh13"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform:skewX(30deg);}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh14"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform:skewX(-30deg);}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>SkewY(deg) Values</h4>
+              <div class="kurung1">
+                <div class="contoh15"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform:skewY(30deg);}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh16"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{transform:skewY(-30deg);}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>Skew Gabungan Values</h4>
+              <div class="contoh17"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh:hover{ transform:skew(30deg, 20deg); }</pre>
+
+              <div class="contoh18"></div>
+              <p>Script CSS :</p>
+              <pre>.contoh:hover{ transform:skewY(30deg) rotate(180deg) scale(1.2); }</pre>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Translate -->
+        <li>
+          <h3>Penggunaan Translate Values</h3>
+          <ul type="square">
+            <li>
+              <h4>Transalate(px) Values</h4>
+              <div class="kurung1">
+                <div class="contoh19"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalate(100deg);
+}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh20"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalate(-100deg);
+}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>transalateX(px) Values</h4>
+              <div class="kurung1">
+                <div class="contoh19"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalateX(100deg);
+}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh20"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalateX(-100deg);
+}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>transalateY(px) Values</h4>
+              <div class="kurung1">
+                <div class="contoh21"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalateY(100deg);
+}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh22"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalateY(-100deg);
+}</pre>
+              </div>
+            </li>
+            <li>
+              <h4>transalate Gabungan Values</h4>
+              <div class="kurung1">
+                <div class="contoh23"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalate(100deg);
+}</pre>
+              </div>
+
+              <div class="kurung2">
+                <div class="contoh24"></div>
+                <p>Script CSS :</p>
+                <pre>.contoh:hover{
+    transform:transalate(-100deg)
+              skew(30deg) 
+              rotate(180deg);
+}</pre>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

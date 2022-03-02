@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Prefix CSS 3</title>
+    <link rel="stylesheet" href="vendor.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="deskripsi">
+            <h1>Vendor Prefix</h1>
+            <p class="rata">Dari kata <i>prefix</i> yang berarti awalan maksudnya kita akan menambahkan awalan pada
+                property CSS 3
+                sedangkan vendor adalah browser yang bersangkutan.</p>
+            <p class="rata">Vendor prefix adalah sintaks khusus pada CSS 3 yang harus ditambahkan pada property CSS 3.
+                Jadi
+                ada beberapa
+                property CSS 3 yang tidak jalan di beberapa browser dan <b><i>Vendo Prefix</i></b> ini berguna untuk
+                itu.
+                Sintaks khusus tersebut spesifik atau berbeda-beda untuk setiap browser/vendor.
+            </p>
+            <p>Berikut cara menambahkannya :</p>
+            <ul type="square">
+                <li><span>-webkit-</span> [property CSS 3] : Chrome, Safari, Opera versi terbaru.</li>
+                <li><span>-moz-</span> [property CSS 3] : Firefox.</li>
+                <li><span>-ms-</span> [property CSS 3] : Internet Explorer.</li>
+                <li><span>-o-</span> [property CSS 3] : Opera Versi Lama.</li>
+            </ul>
+        </div>
+        <div class="example">
+            <h3>Contoh Penggunaan :</h3>
+            <p>Pada chrome gambar di bawah ini dapat berubah karena chrome sudah bisa pakai property filter ini.
+                Akan tetapi, pada browser <b><i>Internet Explorer</i></b> gambar ini tidak berubah menjadi hitam
+                putih.</p>
+            <img src="gambar.png" alt="Gambar normal" class="contoh1">
+            <p class="ket">Kondisi Awal</p>
+            <p>Script CSS Kondisi Awal :</p>
+            <pre>img {
+    width: 200px;
+    margin: auto;
+    display: block;
+}</pre>
+            <img src="gambar.png" alt="Gambar diberi filter" class="contoh2">
+            <p class="ket">Kondisi Akhir</p>
+            <p>Script CSS Kondisi Akhir :</p>
+            <pre>img {
+    width: 200px;
+    margin: auto;
+    display: block;
+    filter: grayscale(100%);
+}</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient CSS 3</title>
+    <link rel="stylesheet" href="gradient.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#linear">linear-gradient</a></li>
+            <li><a href="#radial">radial-gradient</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 id="home">Gradient</h1>
+        <p>Gradient adalah teknik untuk memberi warna gradiasi pada elemen yang dimiliki. Gradient memiliki 2 jenis
+            yaitu linear-gradient dan radial-gradient.</p>
+        <div class="macam">
+            <h3>Macam-macam Gradient :</h3>
+            <ul>
+                <li>
+                    <h4>linear-gradient</h4>
+                    <p>linear-gradient memberikan gradiasi warna secara garis lurus. linear-gradient bukan
+                        property css3, melainkan value untuk background-image dan background.</p>
+                    <p><b>Sintaks Sederhana linear-gradient :</b></p>
+                    <pre>background: linear-gradient(warna awal, warna akhir);</pre>
+                    <p><b>Sintaks linear-gradient Multiple Color :</b></p>
+                    <pre>background: linear-gradient(warna-1, warna-2, ... , warna-n);</pre>
+                    <p><b>Sintaks linear-gradient lengkap dengan arah dan sudut :</b></p>
+                    <pre>background: linear-gradient(sudut | arah , warna-1, warna-2, ... , warna-n);</pre>
+                    <p>Value dari <b>sudut</b> adalah derajat atau degree, contohnya 45deg, 90deg dll.</p>
+                    <p>Value dari <b>arah</b> :</p>
+                    <ul>
+                        <li><b>to bottom : </b>dari atas ke bawah.</li>
+                        <li><b>to top : </b>dari bawah ke atas.</li>
+                        <li><b>to left : </b>dari kanan ke kiri.</li>
+                        <li><b>to right : </b>dari kiri ke kanan</li>
+                        <li><b>to left top : </b>dari bawah kanan ke atas kiri.</li>
+                        <li><b>to right top : </b>dari bawah kiri ke atas kanan.</li>
+                        <li><b>to left bottom : </b>dari kanan atas ke kiri bawah.</li>
+                        <li><b>to right bottom : </b>dari kiri atas ke kanan bawah.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>radial-gradient</h4>
+                    <p>radial-gradient memberikan gradiasi warna secara lingkaran. radial-gradient bukan
+                        property css3, melainkan value untuk background-image dan background.</p>
+                    <p>radial-gradient memiliki banyak nilai, yaitu :</p>
+                    <ul>
+                        <li>
+                            <p>Value dari <i>tipe</i>:</p>
+                            <ul>
+                                <li title="punya link"><a href="#tipe1">ellipse</a> : tipe default dari radial-gradient.
+                                </li>
+                                <li title="punya link"><a href="#tipe2">circle</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>Value dari <i>jangkauan</i>. Maksudnya adalah jangkauan dari warna gradiasi dapat diatur.
+                                Jangkauan juga merupakan jarak dari pusat gradient ke sisi terluarnya.</p>
+                            <p>Vakue dari jangkauan :</p>
+                            <ol>
+                                <li><a href="#jangkauan1">closest-corner</a> : jarak dari pusat gradient ke sudut
+                                    terdekat elemen.</li>
+                                <li><a href="#jangkauan2">closest-side</a> : jarak dari pusat gradient ke sisi terdekat
+                                    elemen.</li>
+                                <li><a href="#jangkauan3">farthest-corner</a> : jarak dari pusat gradient ke sudut
+                                    terjauh elemen.</li>
+                                <li><a href="#jangkauan4">farthest-side</a> : jarak dari pusat gradient ke sisi terjauh.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p><a href="#posisi">Mengatur Posisi</a> :</p>
+                            <ul>
+                                <li>
+                                    <p>posisi-y. Value dalam satuan px:</p>
+                                    <ul>
+                                        <li>top</li>
+                                        <li>center</li>
+                                        <li>bottom</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>posisi-x. Value dalam satuan px:</p>
+                                    <ul>
+                                        <li>left</li>
+                                        <li>center</li>
+                                        <li>right</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>Macam-macam Sintaks radial-gradient :</p>
+                    <ul>
+                        <li>
+                            <p><b>Sintaks Sederhana radial-gradient :</b></p>
+                            <pre>background: radial-gradient(warna awal, warna akhir);</pre>
+                        </li>
+                        <li>
+                            <p><b>Sintaks radial-gradient Multiple Color :</b></p>
+                            <pre>background: radial-gradient(warna-1, warna-2, ... , warna-n);</pre>
+                        </li>
+                        <li>
+                            <p><b>Sintaks radial-gradient lengkap dengan arah dan sudut :</b></p>
+                            <pre>background: radial-gradient([tipe] [jangkauan] 
+                                    at [posisi-y] [posisi-x], 
+                                    warna-1, 
+                                    warna-2,
+                                    ... , 
+                                    warna-n);</pre>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- linear-gradient -->
+        <div class="penggunaan" id="linear">
+            <h2>Contoh Penggunaan linear-gradient:</h2>
+            <ol>
+
+                <!-- contoh 1 -->
+                <li>
+                    <h3>Gradient Sederhana</h3>
+                    <div class="contoh-1"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(red, blue);
+}</pre>
+                </li>
+
+                <!-- contoh 2 -->
+                <li>
+                    <h3>Gradient Multiple Color</h3>
+                    <div class="contoh"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(red, #f0d606, rgba(255, 255, 0, 1), green);
+}</pre>
+                </li>
+
+                <!-- contoh 3 -->
+                <li>
+                    <h3>Gradient dengan nilai sudut</h3>
+                    <!-- contoh sudut1 -->
+                    <div class="sudut-1">
+                        <div class="contoh-2"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(90deg, red, blue);
+}</pre>
+                    </div>
+                    <!-- contoh sudut2 -->
+                    <div class="sudut-2">
+                        <div class="contoh-3"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(-45deg, red, blue);
+}</pre>
+                    </div>
+                </li>
+
+                <!-- contoh 4 -->
+                <li>
+                    <h3>Gradient dengan nilai arah</h3>
+                    <!-- arah1 -->
+                    <div class="sudut-1">
+                        <div class="contoh-4"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to top, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah2 -->
+                    <div class="sudut-2">
+                        <div class="contoh-5"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to left bottom, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah3 -->
+                    <div class="sudut-3">
+                        <div class="contoh-7"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah4 -->
+                    <div class="sudut-4">
+                        <div class="contoh-8"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to left, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah5 -->
+                    <div class="sudut-5">
+                        <div class="contoh-9"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah6 -->
+                    <div class="sudut-6">
+                        <div class="contoh-10"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to left top, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah7 -->
+                    <div class="sudut-7">
+                        <div class="contoh-11"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right top, red, blue);
+}</pre>
+                    </div>
+                    <!-- arah8 -->
+                    <div class="sudut-8">
+                        <div class="contoh-12"></div>
+                        <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right bottom, red, blue);
+}</pre>
+                    </div>
+                </li>
+                <!-- contoh 5 : color stop -->
+                <li>
+                    <h3>Gradient Color Stop</h3>
+                    <div class="contoh-6"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: linear-gradient(to right, red 63%, blue 80%);
+}</pre>
+                </li>
+            </ol>
+        </div>
+
+        <!-- radial-gradient -->
+        <div class="cth-radial" id="radial">
+            <h2>Contoh Penggunaan radial-gradient:</h2>
+            <ol>
+                <li>
+                    <h3>Gradient Sederhana</h3>
+                    <div class="radial-1"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: radial-gradient(red, blue);
+}</pre>
+                </li>
+                <li>
+                    <h3>Gradient Multiple Color</h3>
+                    <div class="radial-2"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: radial-gradient(red, blue, green, yellow);
+}</pre>
+                </li>
+                <li>
+                    <h3>Gradient Stop Color</h3>
+                    <div class="radial-3"></div>
+                    <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: radial-gradient(red <mark>10%</mark>, blue <mark>20%</mark>, green <mark>80%</mark>);
+}</pre>
+                </li>
+                <li>
+                    <h3>Gradient dengan tipe :</h3>
+                    <ul>
+                        <li id="tipe1">
+                            <h4>Gradient tipe "ellipse"</h4>
+                            <div class="radial-4"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(<mark>ellipse</mark>, red, blue);
+}</pre>
+                        </li>
+                        <li id="tipe2">
+                            <h4>Gradient tipe "circle"</h4>
+                            <div class="radial-5"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(<mark>circle</mark>, red, blue);
+}</pre>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <h3>Gradient dengan jangkauan :</h3>
+                    <ul>
+                        <li id="jangkauan1">
+                            <h4>Gradient jangkauan "closest-corner"</h4>
+                            <div class="radial-6"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(circle <mark>closest-corner</mark>, red, blue);
+}</pre>
+                        </li>
+                        <li id="jangkauan2">
+                            <h4>Gradient jangkauan "closest-side"</h4>
+                            <div class="radial-7"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(circle <mark>closest-side</mark>, red, blue);
+}</pre>
+                        </li>
+                        <li id="jangkauan3">
+                            <h4>Gradient jangkauan "farthest-corner"</h4>
+                            <div class="radial-8"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(circle <mark>farthest-corner</mark>, red, blue);
+}</pre>
+                        </li>
+                        <li id="jangkauan4">
+                            <h4>Gradient jangkauan "farthest-side"</h4>
+                            <div class="radial-9"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(circle <mark>farthest-side</mark>, red, blue);
+}</pre>
+                        </li>
+                        <li id="posisi">
+                            <h3>Gradient dengan posisi</h3>
+                            <div class="radial-10"></div>
+                            <pre>div {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background: radial-gradient(circle farthest-side <mark>at top left</mark>, red, blue);
+}</pre>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
